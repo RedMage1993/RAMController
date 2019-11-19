@@ -59,13 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				B8DBFB52238358C400715FE6 /* AppDelegate.swift */,
+				B8DBFB682383894000715FE6 /* SceneDelegate.swift */,
 				B8DBFB56238358C400715FE6 /* ViewController.swift */,
 				B8DBFB58238358C400715FE6 /* Main.storyboard */,
 				B8DBFB5B238358C500715FE6 /* Assets.xcassets */,
 				B8DBFB5D238358C500715FE6 /* LaunchScreen.storyboard */,
 				B8DBFB60238358C500715FE6 /* Info.plist */,
 				B8DBFB662383795D00715FE6 /* RamGuy.swift */,
-				B8DBFB682383894000715FE6 /* SceneDelegate.swift */,
 			);
 			path = RAMController;
 			sourceTree = "<group>";

@@ -47,11 +47,12 @@ extension RamGuy {
 
 extension RamGuy {
     func calculateRAMUsage() -> RAMUsage? {
-        var pageSize: vm_size_t = 4096
+        let pageSize: vm_size_t = 4096
     
-        if host_page_size(machHost, &pageSize) != KERN_SUCCESS {
-            pageSize = 4096
-        }
+        // For some reason, this is giving back a page size of 16384, which is incorrect.
+//        if host_page_size(machHost, &pageSize) != KERN_SUCCESS {
+//            pageSize = 4096
+//        }
          
         guard let vm_stat = VMStatistics64() else { return nil }
         
