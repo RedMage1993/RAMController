@@ -62,6 +62,7 @@ class ViewController: UIViewController {
               numOfBytesToUse < ramUsage.freeRam
         else { return showError() }
         
+        data = nil
         data = Array<UInt8>(repeating: 0, count: numOfBytesToUse)
     }
     
